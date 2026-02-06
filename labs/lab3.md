@@ -12,7 +12,7 @@ Add text here
 7. Go to 'File --> Open folder'
 8. Select your 'gen711-811' directory
 9. If you haven't done so already, save your workspace to this directory (File --> save directory as --> enter)
-10. Take your notes in 'Markdown' format. See the readme.txt for taking notes for this lab below. 
+10. Take your notes in 'Markdown' format. See the readme.txt for taking notes for this lab below.
 
 # Part 1 (lab 3)
 ### Questions:
@@ -69,9 +69,10 @@ To change directories, use 'cd' and then hit tab two times to see directories in
 ### Complete the questions below when intrstructed. Push the changes to this document to recive credit for attending the lab
 
 #### 1. What are 3 ways to change directories to your home directory from the  untrimmed_fastq directory?
-1.
-2.
-3.
+1. cd $HOME
+2. cd ~
+3. ../../../
+4. cd /home/users/lhi1001
 
 #### 2. How many programs in /bin 
 2. Do each of the following tasks from your current directory using a single ls command for each:
@@ -81,9 +82,9 @@ To change directories, use 'cd' and then hit tab two times to see directories in
     - Bonus: List all of the files in /bin that contain the letter ‘a’ or the letter ‘c’.
 
 #### Answers here
-Start with the letter c ____
-Start with the letter a ____
-Start with the letter o ____
+Start with the letter c: ls /bin/c*
+Start with the letter a: ls /bin/a*
+Start with the letter o: ls /bin/o*
 Contain the letter ‘a’ or the letter ‘c’ ____
 
 #### What command/commands would you use to find the line number in your history for the command that listed all the '.fastq' files using the absolute path. Paste your answer below.
