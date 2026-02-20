@@ -35,13 +35,19 @@ Quality score:    01........11........21........31........41
 ::::::::::::::::::::::::::::::::::::::::::::::::::
 
 *Warm ups: What is the last read in the SRR2584863_1.fastq file? How confident are you in this read?
-A: 
+A: @SRR097977.249 209DTAAXX_Lenski2_1_7:8:3:441:292 length=36
+GGGTAGGTATTACTCAGGACGAGGCGGTCGTGCCAC
+
+We are quite confident since we have lots of "C's" in the quality line.
 
 How big are your fastqs? (Hint: Look at the options for the ls command to see how to show file sizes.)
 - hint, it involves 'ls'. See if you can do it using a relative and absolute path
 - another hint: There is an option to make it easy to read the file size. Use one of the two methods to find it
-A:
-
+A: drwxr-xr-x. 2 lhi1001 domain users  44 Feb 13 16:46 backup
+-rw-r--r--. 1 lhi1001 domain users 757 Feb 13 15:15 file-c-prog.txt
+-rw-r--r--. 1 lhi1001 domain users 15K Feb  6 16:34 headerlines.txt
+-rw-r--r--. 1 lhi1001 domain users 47K Jan 30 11:07 SRR097977.fastq
+-rw-r--r--. 1 lhi1001 domain users 43K Jan 30 11:07 SRR098026.fastq
 
 
 ### EXERCISE 5.1
@@ -76,12 +82,17 @@ talk more about this later).
 Change the permissions on all of your backup files to be write-protected.
 
 ```
-Replace this with code
+rm -Rf backup
+mkdir backup
+cp SRR097977.fastq backup/SRR097977_backup
+cp SRR098026.fastq backup/SRR098026_backup
 
 ```
+chmod ug+rwx SRR097977.fastq
+
 
 How do you know they are write protected?
-A:
+A: ls -l
 
 
 ### EXERCISE 5.3: CONDA ENVIRONMENTS AND PROGRAMS
